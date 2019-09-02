@@ -9,72 +9,94 @@
 </head>
 <body>
     <main>
-        <section class="hero flex">            
-            <h1>Hey, I'm <span>Brian McKenna</span>, front end developer and problem solver</h1>
-            <button class="about-button">Get to know me</button>
+        <section class="hero flex">                     
+            <h1>Hey, I'm <span class="textPop">Brian McKenna</span>, front end developer and problem solver</h1>
+            <!-- <button class="about-button">Get to know me ▼</button> -->
+            <a class="anchor-link" href="#about-anchor">Get to know me ▼</a>
         </section>
-        <section class="about">
-            <h1>About</h1>
-            <div class="flex-container">
-                <div class="flex-grid">
-                    <div class="flex-row">
-                        <div class="icon">
-                            <div class="icon-image html-image"></div>
-                            <h3>HTML5</h3>
-                        </div>
-                        <div class="icon">
-                            <div class="icon-image css-image"></div>
-                            <h3>CSS3</h3>
-                        </div>
-                    </div>
-                    <div class="flex-row">
-                        <div class="icon">JavaScript</div> 
-                        <div class="icon">jQuery</div>
-                    </div>
-                </div>
-            </div>
-            <div class="me flex">
+        <section class="about flex" id="about-anchor">
+            <h2>About</h2>
+            <div class="bar"></div>            
+            <div class="me">
                 <div class="me-image">
                     <img src="images/headShot.jpg" alt="Brian McKenna" class="headShot">           
                 </div>
                 <p>I'm a creative and competitive person so I love to build things and I love to conquer challenges. My career path has taken me from VBA application development to founding a Nonprofit organization and even IT systems engineering. All in the pursuit of problem-solving and trying to build something in the process. My passion for web development comes from that same pursuit of conquering a challenge and the satisfaction of helping build something. So whether you need a website designed and built, a mechanically engineered Halloween costume, or extra skater for a hockey game, I've got you covered.</p>
             </div>
+            <div class="flex-container">
+                    <div class="flex-grid">
+                        <div class="flex-row">
+                            <div class="icon">
+                                <div class="icon-image html-image"></div>
+                                <!-- <h3>HTML5</h3> -->
+                            </div>
+                            <div class="icon">
+                                <div class="icon-image css-image"></div>
+                                <!-- <h3>CSS3</h3> -->
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="icon">
+                                <div class="icon-image javaScript-image"></div>
+                                <!-- <h3>JavaScript</h3> -->
+                            </div>
+                            <div class="icon">
+                                <div class="icon-image jQuery-image"></div>
+                                <!-- <h3>jQuery</h3> -->
+                            </div>
+                            <div class="icon">
+                                    <div class="icon-image vba-image"></div>
+                                    <!-- <h3>VBA</h3> -->
+                                </div>
+                        </div>
+                    </div>
+                </div>
         </section>
         <section class="projects flex">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
+            <div class="bar"></div>
             <div class="project-container">
-                <div class="screenShot"></div>
+                <div class="screenShot-container">
+                    <img src="images/quizApp-screenShot.PNG" alt="Quiz App Screen Shot" class="screenShot">
+                </div>
                 <div class="info-container">
-                    <div class="project-title"></div>
-                    <div class="technology-icons"></div>
-                    <div class="project-description"></div>
-                    <div class="project-links"></div>
+                    <div class="project-title">
+                        <h3>NHL Quiz App</h3>
+                    </div>
+                    <div class="technology-icon-container">
+                        <img class="technology-icon" src="images/html5-logo.png" alt="html5 logo">
+                        <img class="technology-icon" src="images/CSS3-logo.png" alt="css3 logo">
+                        <img class="technology-icon" src="images/javaScript-logo.png" alt="javascript logo">
+                        <img class="technology-icon" src="images/jQuery-logo.png" alt="jQuery logo">        
+                    </div>
+                    <div class="project-description">
+                        <p>Testing your knowledge of current NHL star players. See how  many of today's stars you can identify.</p>
+                    </div>
+                    <div class="project-link-container">
+                        <a class="project-link" href="https://github.com/bmckenna1982/quiz-app" target="_blank">Github repo</a>
+                        <a class="project-link" href="https://bmckenna1982.github.io/quiz-app/" target="_blank">Live demo</a>
+                        <!-- <button class="github-button">Github repo</button>
+                        <button class="demo-button">Live demo</button> -->
+                    </div>
                 </div>
             </div>
         </section>
-        <section class="contact flex">
-            <h1>Contact</h1>
-            <form class="contact-form">
-                <fieldset>
-                    <legend></legend>
-                        <div>
-                            <label for=""></label>
-                            <input type="text">
-                        </div>
-                        <div></div>
-                        <div></div>
-                        <button type="submit"></button>
-                </fieldset>
-            </form>
+        <section class="contact">
+            <div class="contact-info flex">
+                <h2>Want to get in touch?</h2>
+                <div class="bar"></div>
+                <p>Shoot me an email: <a href="mailto:bmckenna1982@gmail.com">bmckenna1982@gmail.com</a></p>
+                <p>Or</p>
+                <p>Take a look at my social media or github:</p>
+            </div>
+            <div class="icon-container">
+                <a href="https://www.linkedin.com/in/brian-mckenna-dev/" target="_blank"><img class="social-icon" src="images/linkedIn-logo.png" alt="linked in logo"></a>
+                <a href="https://twitter.com/bMcKenna_dev" target="_blank"><img class="social-icon" src="images/twitter-logo.png" alt="twitter logo"></a>
+                <a href="https://github.com/bmckenna1982" target="_blank"><img class="social-icon" src="images/github-logo.png" alt="github logo"></a> 
+            </div>            
         </section>
     </main>
-    <footer>
-        <div class="contact-icons">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
+    <footer>        
         <div>Brian McKenna <span class="footNote">©2019</span></div>
     </footer>
     <script src="//code.jquery.com/jquery.min.js"></script>
