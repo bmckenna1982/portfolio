@@ -14,6 +14,23 @@
     background-size: cover;
 }
 
+.nav-container {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    text-align: left;
+    background-color: #1e1e1e;
+    color: #cfcfcf;
+    padding: 0 25px;
+}
+
+.page-link {
+    margin: 10px;
+}
+
 h1, h2, h3 {
     font-family: 'Vollkorn', serif;
 }
@@ -42,7 +59,7 @@ p {
 }
 
 .textPop {
-    color: #79bde9;
+    color: #79bde9;    
 }
 
 a {
