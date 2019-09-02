@@ -10,7 +10,7 @@
     flex-direction: column;    
     align-items: center;
     justify-content: center;
-    background: url("images/code-background.PNG") 0 0 no-repeat;
+    background: url("images/code-background.png") 0 0 no-repeat;
     background-size: cover;
 }
 
