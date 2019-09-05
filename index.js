@@ -25,17 +25,12 @@ function goToSection() {
     $('html, body').animate({
         scrollTop: $(anchorID).offset().top - 50
       }, 400);    
-    // $('.nav-container').find("*").removeClass('active');
     highlightLink(anchorID);
 }
 
-function activateNav() {
-    let navPos = $('nav').position().top;
+function activateNav() {    
     let pos = $(window).scrollTop();
-    let pos2 = pos + 51;
-    let scrollBottom = pos + $(window).height();
-    console.log(pos);
-    console.log($(document).height());
+    let pos2 = pos + 51; //acount for fixed menu
 
     if (pos2 > $('#home-anchor').offset().top) {highlightLink('#home-anchor'); }
     if (pos2 > $('#about-anchor').offset().top)      { highlightLink('#about-anchor'); }

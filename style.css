@@ -95,16 +95,12 @@ a:hover, a:focus {
 .flex-container {
     max-width: 1335px;
     margin: 0 auto;
-    /* display: flex; */
-    width: 100%;
-    /* justify-content: center; */
+    width: 100%;    
 }
 
 .flex-grid {
     max-width: 1400px;
-    /* margin: 0 auto 0 auto; */
     display: flex;
-    /* flex-flow: row wrap; */
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;    
@@ -112,28 +108,21 @@ a:hover, a:focus {
 
 .flex-row {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;    
 }
 
 .logo {
-    /* margin: 20px;     */
     margin: 10px;
     width: 150px;
     height: 150px;
     display: flex;
     flex-direction: column;
-    /* text-align: center; */
     border-radius: 50%;
     background-color: #cfcfcf;
     justify-content: center;
     align-items: center;
-    /* flex-basis: 20%; shrinks items as needed after starting at 20%*/
-    /* flex: 1;     remove flex: 1 when using space-between in container or item fills container*/
-    /* border: 1px solid grey; */
-    /* justify-content: space-between; */
 }
 
 .me {
@@ -154,29 +143,11 @@ a:hover, a:focus {
     background-size: contain;
 }
 
-.html-image {
-    /* border-radius: 50%;
-    background-color: #cfcfcf; */
-    /* background: url("images/html5-logo.png") no-repeat;     */
-}
-
-.css-image {    
-    /* background: url("images/css3-logo.png") no-repeat; */
-}
-
-.javaScript-image {    
-    /* background: url("images/javaScript-logo.png") no-repeat; */
-    /* height: 130px; */
-}
-
 .jQuery-image {    
-    /* background: url("images/jQuery-logo.png") no-repeat; */
     width: 80%;
 }
 
 .vba-image {
-    /* background: url("images/vba-logo.png") no-repeat; */
-    /* width: 80%; */
     height: 70%
 }
 
@@ -207,8 +178,6 @@ a:hover, a:focus {
 }
 
 section {
-    /* height: 100vh; will use for mobile only*/
-    /* min-height: 300px;*/
     padding: 15px; 
     background-color: #565656;    
 }
@@ -216,41 +185,6 @@ section {
 section:nth-child(even) {
     background-color: #414141;
 }
-
-
-
-/* .about { 
-    
-}*/
-
-/* .contact-form {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;
-}
-
-fieldset {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    width: 100%;
-}
-
-input, textarea {
-    width: 100%;
-} */
-
-/* .contact {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-} */
-
-/* .contact-info {
-    justify-content: center;
-} */
-
 
 .contact-info p {
     text-align: center;
@@ -286,7 +220,6 @@ footer {
 }
 
 .project-link, button, .anchor-link {
-/* button { */
     text-decoration: none;
     color: black;
     background-color: #79bde9;
