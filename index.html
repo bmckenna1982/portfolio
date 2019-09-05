@@ -4,67 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Brian McKenna Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2|Vollkorn&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main>
-        <section class="hero flex">                     
+        <section class="hero flex" id="home-anchor">                     
+            <nav class="flex">
+                    <div class="nav-container">
+                        <div class="page-link active" dest="#home-anchor">HOME</div>
+                        <div class="page-link" dest="#about-anchor">ABOUT</div>
+                        <div class="page-link" dest="#projects-anchor">PROJECTS</div>
+                        <div class="page-link" dest="#contact-anchor">CONTACT</div>
+                    </div>                    
+                </nav>
             <h1>Hey, I'm <span class="textPop">Brian McKenna</span>, front end developer and problem solver</h1>
             <!-- <button class="about-button">Get to know me ▼</button> -->
-            <a class="anchor-link" href="#about-anchor">Get to know me ▼</a>
-            <nav class="flex">
-                <div class="nav-container">
-                    <div class="page-link">home</div>
-                    <div class="page-link">about</div>
-                    <div class="page-link">projects</div>
-                    <div class="page-link">contact</div>
-                </div>
-                <div class="hamburger"></div>
-            </nav>
+            <div class="anchor-link" dest="#about-anchor">Get to know me ▼</div>
+            
         </section>
         <section class="about flex" id="about-anchor">
             <h2>About</h2>
-            <div class="bar"></div>            
+            <hr class="bar"></hr>            
             <div class="me">
                 <div class="me-image">
                     <img src="images/headShot.jpg" alt="Brian McKenna" class="headShot">           
                 </div>
-                <p>I'm a creative and competitive person so I love to build things and I love to conquer challenges. My career path has taken me from VBA application development to founding a Nonprofit organization and even IT systems engineering. All in the pursuit of problem-solving and trying to build something in the process. My passion for web development comes from that same pursuit of conquering a challenge and the satisfaction of helping build something. So whether you need a website designed and built, a mechanically engineered Halloween costume, or extra skater for a hockey game, I've got you covered.</p>
+                <p>I'm a creative and competitive person so I love to build things and I love to conquer challenges. My career path has taken me from VBA application development to founding a Nonprofit organization and even IT systems engineering. All in the pursuit of problem-solving and trying to build something in the process.</p> 
+                <p>My passion for web development comes from that same pursuit of conquering a challenge and the satisfaction of helping build something. So whether you need a website designed and built, a mechanically engineered Halloween costume, or extra skater for a hockey game, I've got you covered.</p>
             </div>
             <div class="flex-container">
                     <div class="flex-grid">
                         <div class="flex-row">
-                            <div class="icon">
-                                <div class="icon-image html-image"></div>
+                            <div class="logo">
+                                <img class="logo-image html-image" src="images/originals/html5-with-wordmark-color.svg" alt="html5 logo">
+                                <!-- <object class="icon-image" data="images/originals/html5-with-wordmark-color.svg" type="image/svg+xml"></object> -->
+                                <!-- <div class="icon-image html-image"></div> -->
                                 <!-- <h3>HTML5</h3> -->
                             </div>
-                            <div class="icon">
-                                <div class="icon-image css-image"></div>
+                            <div class="logo">
+                                <img class="logo-image css-image" src="images/originals/css3-seeklogo.com.svg" alt="css3 logo">
+                                <!-- <object class="logo-image" data="images/originals/css3-seeklogo.com.svg" type="image/svg+xml"></object> -->
+                                <!-- <div class="logo-image css-image"></div> -->
                                 <!-- <h3>CSS3</h3> -->
                             </div>
                         </div>
                         <div class="flex-row">
-                            <div class="icon">
-                                <div class="icon-image javaScript-image"></div>
+                            <div class="logo">
+                                <img class="logo-image javascript-image" src="images/originals/javascript-logo.com.svg" alt="javascript logo">
+                                <!-- <object class="logo-image" data="images/originals/javascript-seeklogo.com.svg" type="image/svg+xml"></object> -->
+                                <!-- <div class="logo-image javaScript-image"></div> -->
                                 <!-- <h3>JavaScript</h3> -->
                             </div>
-                            <div class="icon">
-                                <div class="icon-image jQuery-image"></div>
+                            <div class="logo">
+                                <img class="logo-image jQuery-image" src="images/originals/jquery-seeklogo.com.svg" alt="jQuery logo">
+                                <!-- <object class="logo-image" data="images/originals/jquery-seeklogo.com.svg" type="image/svg+xml"></object> -->
+                                <!-- <div class="logo-image jQuery-image"></div> -->
                                 <!-- <h3>jQuery</h3> -->
                             </div>
-                            <div class="icon">
-                                    <div class="icon-image vba-image"></div>
-                                    <!-- <h3>VBA</h3> -->
+                            <div class="logo">
+                                <img class="logo-image vba-image" src="images/originals/vba.svg" alt="vba logo">
+                                <!-- <object class="logo-image" data="images/originals/vba.svg" type="image/svg+xml"></object> -->
+                                <!-- <div class="logo-image vba-image"></div> -->
+                                <!-- <h3>VBA</h3> -->
                                 </div>
                         </div>
                     </div>
                 </div>
         </section>
-        <section class="projects flex">
+        <section class="projects flex" id="projects-anchor">
             <h2>Projects</h2>
-            <div class="bar"></div>
+            <hr class="bar"></hr>
             <div class="project-container">
                 <div class="screenShot-container">
                     <img src="images/quizApp-screenShot.PNG" alt="Quiz App Screen Shot" class="screenShot">
@@ -74,6 +86,7 @@
                         <h3>NHL Quiz App</h3>
                     </div>
                     <div class="technology-icon-container">
+
                         <img class="technology-icon" src="images/html5-logo.png" alt="html5 logo">
                         <img class="technology-icon" src="images/CSS3-logo.png" alt="css3 logo">
                         <img class="technology-icon" src="images/javaScript-logo.png" alt="javascript logo">
@@ -91,14 +104,14 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
-            <div class="contact-info flex">
+        <section class="contact" id="contact-anchor">
+            <header class="contact-info flex">
                 <h2>Want to get in touch?</h2>
-                <div class="bar"></div>
+                <hr class="bar"></hr>
                 <p>Shoot me an email: <a href="mailto:bmckenna1982@gmail.com">bmckenna1982@gmail.com</a></p>
                 <p>Or</p>
                 <p>Take a look at my social media or github:</p>
-            </div>
+            </header>
             <div class="icon-container">
                 <a href="https://www.linkedin.com/in/brian-mckenna-dev/" target="_blank"><img class="social-icon" src="images/linkedIn-logo.png" alt="linked in logo"></a>
                 <a href="https://twitter.com/bMcKenna_dev" target="_blank"><img class="social-icon" src="images/twitter-logo.png" alt="twitter logo"></a>
