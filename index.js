@@ -32,7 +32,7 @@ function goToSection() {
 function activateNav() {
     let navPos = $('nav').position().top;
     let pos = $(window).scrollTop();
-    let pos2 = pos + 50;
+    let pos2 = pos + 51;
     let scrollBottom = pos + $(window).height();
     console.log(pos);
     console.log($(document).height());
