@@ -6,33 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brian McKenna Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Exo+2|Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <nav class="flex">
+        <div class="nav-container">
+            <div class="page-link active" id="#home-anchor">HOME</div>
+            <div class="page-link" id="#about-anchor">ABOUT</div>
+            <div class="page-link" id="#projects-anchor">PROJECTS</div>
+            <div class="page-link" id="#contact-anchor">CONTACT</div>
+        </div>                    
+    </nav>
     <main>
-        <section class="hero flex" id="home-anchor">                     
-            <nav class="flex">
-                    <div class="nav-container">
-                        <div class="page-link active" dest="#home-anchor">HOME</div>
-                        <div class="page-link" dest="#about-anchor">ABOUT</div>
-                        <div class="page-link" dest="#projects-anchor">PROJECTS</div>
-                        <div class="page-link" dest="#contact-anchor">CONTACT</div>
-                    </div>                    
-                </nav>
+        <header class="hero flex" id="home-anchor">                                 
             <h1>Hey, I'm <span class="textPop">Brian McKenna</span>, front end developer and problem solver</h1>
             <!-- <button class="about-button">Get to know me ▼</button> -->
-            <div class="anchor-link" dest="#about-anchor">Get to know me ▼</div>
+            <div class="anchor-link" id="#about-anchor">Get to know me ▼</div>
             
-        </section>
+        </header>
         <section class="about flex" id="about-anchor">
             <h2>About</h2>
-            <hr class="bar"></hr>            
+            <hr class="bar">            
             <div class="me">
                 <div class="me-image">
                     <img src="images/headShot.jpg" alt="Brian McKenna" class="headShot">           
                 </div>
-                <p>I'm a creative and competitive person so I love to build things and I love to conquer challenges. My career path has taken me from VBA application development to founding a Nonprofit organization and even IT systems engineering. All in the pursuit of problem-solving and trying to build something in the process.</p> 
+                <p>I'm a creative and competitive person so I love to build things and I love to conquer challenges. My career path has taken me from VBA application development to founding a nonprofit organization and even IT systems engineering. All in the pursuit of problem-solving and trying to build something in the process.</p> 
                 <p>My passion for web development comes from that same pursuit of conquering a challenge and the satisfaction of helping build something. So whether you need a website designed and built, a mechanically engineered Halloween costume, or extra skater for a hockey game, I've got you covered.</p>
             </div>
             <div class="flex-container">
@@ -61,7 +62,7 @@
         </section>
         <section class="projects flex" id="projects-anchor">
             <h2>Projects</h2>
-            <hr class="bar"></hr>
+            <hr class="bar">
             <div class="project-container">
                 <div class="screenShot-container">
                     <img src="images/quizApp-screenShot.PNG" alt="Quiz App Screen Shot" class="screenShot">
@@ -90,8 +91,8 @@
         <section class="contact" id="contact-anchor">
             <header class="contact-info flex">
                 <h2>Want to get in touch?</h2>
-                <hr class="bar"></hr>
-                <p>Shoot me an email: <a href="mailto:bmckenna1982@gmail.com">bmckenna1982@gmail.com</a></p>
+                <hr class="bar">
+                <p>Shoot me an email: <a href="mailto:bmckenna1982@gmail.com" target="_blank">bmckenna1982@gmail.com</a></p>
                 <p>Or</p>
                 <p>Take a look at my social media or github:</p>
             </header>

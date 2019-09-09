@@ -15,17 +15,17 @@ function setSectionBarWidth() {
 }
 
 function listen() {
-    $(".hero").on('click', '.page-link', goToSection );
+    $("nav").on('click', '.page-link', goToSection );
     $(".hero").on('click', '.anchor-link', goToSection );
     $(window).on('scroll', activateNav );
 }
 
 function goToSection() {
-    let anchorID = $(this).attr("dest");
+    let anchorID = $(this).attr("id");
     $('html, body').animate({
         scrollTop: $(anchorID).offset().top - 50
       }, 400);    
-    highlightLink(anchorID);
+    highlightLink(anchorID);    
 }
 
 function activateNav() {    
@@ -43,7 +43,7 @@ function activateNav() {
 
 function highlightLink(anchor) {
     $('nav .active').removeClass('active');
-    $("nav").find(`[dest="${anchor}"]`).addClass('active');
+    $("nav").find(`[id="${anchor}"]`).addClass('active');
   }
 
 $(onLoad)
