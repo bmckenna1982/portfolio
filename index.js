@@ -21,7 +21,7 @@ function listen() {
 }
 
 function goToSection() {
-    let anchorID = $(this).attr("id");
+    let anchorID = $(this).attr("data-dest");    
     $('html, body').animate({
         scrollTop: $(anchorID).offset().top - 50
       }, 400);    
@@ -32,6 +32,7 @@ function activateNav() {
     let pos = $(window).scrollTop();
     let pos2 = pos + 51; //acount for fixed menu
 
+    
     if (pos2 > $('#home-anchor').offset().top) {highlightLink('#home-anchor'); }
     if (pos2 > $('#about-anchor').offset().top)      { highlightLink('#about-anchor'); }
     if (pos2 > $('#projects-anchor').offset().top)      { highlightLink('#projects-anchor'); }
@@ -43,7 +44,7 @@ function activateNav() {
 
 function highlightLink(anchor) {
     $('nav .active').removeClass('active');
-    $("nav").find(`[id="${anchor}"]`).addClass('active');
+    $("nav").find(`[data-dest="${anchor}"]`).addClass('active');
   }
 
 $(onLoad)
