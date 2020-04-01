@@ -15,7 +15,7 @@
     background: linear-gradient(
         rgba(20, 20, 20, .7),
         rgba(20, 20, 20, .7)),
-        url("images/code-background.png") 0 0 no-repeat;
+        url("images/laptopCoffee.jpg") 0 0 no-repeat;
     background-size: cover;
 }
 
@@ -32,7 +32,8 @@
     /* text-align: left; */
     background-color: #1e1e1e;
     color: #cfcfcf;
-    padding: 0 5px;    
+    padding: 0 5px;
+    z-index: 100;
 }
 
 .page-link {
@@ -104,7 +105,7 @@ a:hover, a:focus {
 }
 
 .flex-container {
-    max-width: 1335px;
+    max-width: 1024px;
     margin: 0 auto;
     width: 100%;    
 }
@@ -126,15 +127,81 @@ a:hover, a:focus {
 
 .logo {
     margin: 10px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     border-radius: 50%;
+    position: relative;
     background-color: #cfcfcf;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+.small_icon {
+  width: 50px;
+  height: 50px;
+  overflow: visible;
+  margin: 0;
+}
+
+.techStack {
+  padding-top: 10px;
+}
+
+.slide_right {
+  box-shadow: inset 0 0 0 0 rgba(20, 20, 20, .7);
+  /* box-shadow: inset 400px 0 0 0 rgba(20, 20, 20, .7); */
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 rgba(20, 20, 20, .7);
+}
+
+.logo .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 100%;
+    height: 100px;
+    padding: 130px 10px;
+    }
+    .logo:hover .fadedbox { opacity: 0.9; }
+    .logo .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(30px);
+    -webkit-transform: translateY(30px);
+    text-align: center;    
+    }
+    .logo .title {
+    font-size: 1.3em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    }
+    .logo:hover .title,
+    .logo:focus .title {
+    opacity: 1;
+    transform: translateY(-70px);
+    -webkit-transform: translateY(-70px);
+    }
 
 .me {
     text-align: center;
@@ -150,12 +217,19 @@ a:hover, a:focus {
 
 .logo-image {
     height: 80%;    
-    background-position: center;
-    background-size: contain;
+    /* background-position: center;
+    background-size: contain; */
 }
 
 .jQuery-image {    
     width: 80%;
+}
+
+.node-image {
+    width: 80%
+}
+.express-image {
+    width: 85%
 }
 
 .vba-image {
@@ -165,12 +239,54 @@ a:hover, a:focus {
 .screenShot-container {
     display: flex;
     flex: 1;
+    position: relative;
 }
 
 .screenShot {
-    width: 100%;
-    margin-top: 15px;
+    width: 100%;    
 }
+
+.screenShot-container .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px;
+    margin: auto;
+    }
+.screenShot-container:hover .fadedbox { opacity: 0.9; }
+.screenShot-container .text {
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    text-align: center;    
+    }
+.screenShot-container .appDesc {
+    /* font-size: 1.3em; */
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    }
+.screenShot-container:hover .appDesc,
+.screenShot-container:focus .appDesc {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    }
 
 .info-container {
     display: flex;
@@ -311,9 +427,28 @@ footer {
     .screenShot {
         margin-bottom: 15px;
     }
+
+    .logo {
+      width: 150px;
+      height: 150px;
+    }
+    .screenShot-container .appDesc {
+      font-size: 1.3em;
+    }
 }
 
 /* ---------- Desktops ---------- */
 @media only screen and (min-width: 1024px) {
-
+  .projects-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;      
+    }
+  .project-container {
+    padding: 10px;
+  }
+  .screenShot-container {
+    width: 380px;
+    height: 280px;
+  }
 }
