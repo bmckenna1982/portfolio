@@ -176,7 +176,7 @@ a:hover, a:focus {
     opacity: 0;
     width: 100%;
     height: 100px;
-    padding: 130px 10px;
+    padding: 130px 0px;
     }
     .logo:hover .fadedbox { opacity: 0.9; }
     .logo .text {
@@ -190,7 +190,7 @@ a:hover, a:focus {
     text-align: center;    
     }
     .logo .title {
-    font-size: 1.3em;
+    /* font-size: 1.3em; */
     text-transform: uppercase;
     opacity: 0;
     transition-delay: 0.2s;
@@ -199,8 +199,8 @@ a:hover, a:focus {
     .logo:hover .title,
     .logo:focus .title {
     opacity: 1;
-    transform: translateY(-70px);
-    -webkit-transform: translateY(-70px);
+    transform: translateY(-85px);
+    -webkit-transform: translateY(-85px);
     }
 
 .me {
@@ -428,10 +428,10 @@ footer {
         margin-bottom: 15px;
     }
 
-    .logo {
+    /* .logo {
       width: 150px;
       height: 150px;
-    }
+    } */
     .screenShot-container .appDesc {
       font-size: 1.3em;
     }
