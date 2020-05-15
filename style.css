@@ -247,7 +247,7 @@ a:hover, a:focus {
 }
 
 .screenShot-container .fadedbox {
-    background-color: #666666;
+    /* background-color: #666666; */
     position: absolute;
     top: 0;
     left: 0;
@@ -257,7 +257,7 @@ a:hover, a:focus {
     -o-transition: all 300ms ease-out;
     -ms-transition: all 300ms ease-out;
     transition: all 300ms ease-out;
-    opacity: 0;
+    /* opacity: 0; */
     width: 100%;
     height: 100%;
     padding: 20px 10px;
@@ -277,7 +277,7 @@ a:hover, a:focus {
 .screenShot-container .appDesc {
     /* font-size: 1.3em; */
     text-transform: uppercase;
-    opacity: 0;
+    /* opacity: 0; */
     transition-delay: 0.2s;
     transition-duration: 0.3s;
     }
@@ -372,6 +372,9 @@ footer {
     align-items: center;
 }
 
+.project-container {
+        max-width: 400px;
+}
 
 /* ---------- Tablets ---------- */
 @media only screen and (min-width: 768px) {
@@ -420,9 +423,9 @@ footer {
         margin-bottom: 15px;
     }
 
-    .project-container {
+    /* .project-container {
         max-width: 400px;
-    }
+    } */
 
     .screenShot {
         margin-bottom: 15px;
