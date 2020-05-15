@@ -236,11 +236,11 @@ a:hover, a:focus {
     height: 70%
 }
 
-.screenShot-container {
+/* .screenShot-container {
     display: flex;
     flex: 1;
     position: relative;
-}
+} */
 
 .screenShot {
     width: 100%;    
@@ -248,7 +248,7 @@ a:hover, a:focus {
 
 .screenShot-container .fadedbox {
     /* background-color: #666666; */
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     color: #fff;
@@ -277,16 +277,17 @@ a:hover, a:focus {
 .screenShot-container .appDesc {
     /* font-size: 1.3em; */
     text-transform: uppercase;
+    text-align: left;
     /* opacity: 0; */
-    transition-delay: 0.2s;
-    transition-duration: 0.3s;
+    /* transition-delay: 0.2s; */
+    /* transition-duration: 0.3s; */
     }
-.screenShot-container:hover .appDesc,
+/* .screenShot-container:hover .appDesc,
 .screenShot-container:focus .appDesc {
     opacity: 1;
     transform: translateY(0px);
     -webkit-transform: translateY(0px);
-    }
+    } */
 
 .info-container {
     display: flex;
@@ -364,6 +365,8 @@ footer {
 
 .project-link-container {
     margin: 15px 0;    
+    display: flex;
+    justify-content: center;
 }
 
 .flex {
@@ -450,8 +453,8 @@ footer {
   .project-container {
     padding: 10px;
   }
-  .screenShot-container {
+  /* .screenShot-container {
     width: 380px;
     height: 280px;
-  }
+  } */
 }
